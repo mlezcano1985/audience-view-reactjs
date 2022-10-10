@@ -1,34 +1,60 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# AudienceView ReactJS
 
-## Getting Started
+Small e-commerce using as a data source the API <https://us-central1-techtaskapi.cloudfunctions.net/offers>. It's a basic example, that only fetches all offers and adds or removes items to the shopping cart.
 
-First, run the development server:
+## Features
+
+- List all products from the API.
+- Add products to the shopping cart.
+- Remove products from the shopping cart.
+- Clear the shopping cart.
+- Show total amount.
+
+## Start application on a local environment
+
+### NodeJS
+
+1. Install [NodeJS](https://nodejs.org/en/).
+2. Clone de repository.
+3. Open a terminal on the root of the repository and install it's depencencies:
+
+   ```bash
+   npm i
+   ```
+
+Run the app in development mode:
 
 ```bash
 npm run dev
-# or
-yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Or in production mode:
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+```bash
+npm run build
+```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+```bash
+npm start
+```
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+After the app is running, open the link <http://localhost:3000>.
 
-## Learn More
+### Docker
 
-To learn more about Next.js, take a look at the following resources:
+1. Install [Docker](https://www.docker.com/).
+2. Open a terminal on the root of the repository and run these commands:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+   ```bash
+   docker build --force-rm -t audience-view-reactjs .
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+   ```bash
+   docker run --rm -it -p 3000:3000 audience-view-reactjs
+   ```
 
-## Deploy on Vercel
+After the app is running, open the link <http://localhost:3000>.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Feedbacks
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Some bug? Let me know here :point_right: [Twitter](https://twitter.com/mlezcano1985).

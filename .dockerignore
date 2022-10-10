@@ -1,0 +1,13 @@
+node_modules
+.gitignore
+.vscode
+.prettierrc
+.prettierignore
+.next
+README.md
+.git
+coverage
+dist
+Dockerfile
+.dockerignore
+npm-debug.log
